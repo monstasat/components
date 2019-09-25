@@ -1,0 +1,27 @@
+@mixin mdc-button-loader {
+    .mdc-button--loading {
+        pointer-events: none;
+
+        .mdc-button__label, .mdc-button__icon {
+            opacity: 0;
+        }
+        .mdc-button__loader-container {
+            display: flex;
+        }
+    }
+
+    .mdc-button__loader-container {
+        @include mdc-button__loader-container_;
+    }
+}
+
+@mixin mdc-button__loader-container_ {
+    display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
