@@ -1,0 +1,8 @@
+(library
+  (name        components)
+  (public_name components)
+  (libraries   components_tyxml
+               js_of_ocaml
+               js_of_ocaml-lwt
+               js_of_ocaml-tyxml)
+  (preprocess  (pps js_of_ocaml-ppx)))

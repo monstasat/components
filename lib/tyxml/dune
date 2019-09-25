@@ -1,0 +1,5 @@
+(library
+  (name components_tyxml)
+  (public_name components-tyxml)
+  (libraries str tyxml color))
+
